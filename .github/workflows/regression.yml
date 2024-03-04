@@ -9,15 +9,15 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout
+      - name: 💻 Checkout
         uses: actions/checkout@v4
 
-      - name: Install node.js
+      - name: ✅ Install node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
 
-      - name: Install all dependencies
+      - name: 🫠 Install all dependencies
         run: |
           npm install
           npm list
