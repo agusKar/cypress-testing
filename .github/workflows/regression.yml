@@ -1,0 +1,19 @@
+name: Cypress testing
+
+run-name: CI Run Cypress
+
+on: [push]
+
+jobs:
+  Build-Cypress-TestSuite-AfterPush:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
