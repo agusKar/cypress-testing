@@ -1,0 +1,20 @@
+{
+  "products":{
+    "product":"li.ec_product_li",
+    "add_to_cart":".ec_product_addtocart > [id^='ec_add_to_cart_']"
+  },
+  "inputs": {
+    "btn_resta":"input.ec_minus",
+    "input_numerico":"input.ec_quantity",
+    "btn_suma":"input.ec_plus",
+    "btn_update":".ec_cartitem_update_button"
+  },
+  "data":{
+    "product_title":".ec_cartitem_details",
+    "single_price":".ec_cartitem_price",
+    "total_product_price":".ec_cartitem_total",
+    "subtotal_cart_price":"#ec_cart_subtotal",
+    "shipping_price":"#ec_cart_shipping",
+    "grandtotal_cart_price":"#ec_cart_total"
+  }
+}
